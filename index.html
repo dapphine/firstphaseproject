@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Models</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <aside id="sidebar">
+            <h2>BMW Models</h2>
+            <ul id="model-list"></ul>
+        </aside>
+
+        <main id="model-details-container">
+            <div id="model-details" class="model-details">
+                <h2 id="model-name"></h2>
+                <img id="model-image" src="" alt="" class="model-image">
+                <p id="model-description"></p>
+
+                <section id="comments-section">
+                    <h3>Comments</h3>
+                    <ul id="comment-list"></ul>
+                    <form id="comment-form">
+                        <input type="text" id="comment-input" placeholder="Write a comment..." required>
+                        <button type="submit">Add Comment</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <aside id="sidebar">
+        <h2>BMW Models</h2>
+        <input type="text" id="search-input" placeholder="Search models...">
+        <form id="filter-form">
+            <input type="text" name="year" placeholder="Filter by year">
+            <input type="text" name="engine" placeholder="Filter by engine">
+            <button type="submit">Filter</button>
+        </form>
+        <ul id="model-list"></ul>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+
+    </aside>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
